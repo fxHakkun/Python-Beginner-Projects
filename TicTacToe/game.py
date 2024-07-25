@@ -1,3 +1,8 @@
+# This code really a 1 to 1 with the tutorial, so not really much changes made
+# as it's still take some time for me to grasp the concept
+# there like several method introduce that not really me familiar with ## 25/7/2024 until I grasp the concept, I will make my changes.
+
+
 import time
 from player import HumanPlayer, RandomComputerPlayer
 
