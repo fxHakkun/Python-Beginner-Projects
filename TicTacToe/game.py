@@ -1,4 +1,6 @@
 # This code really a 1 to 1 with the tutorial, so not really much changes made
+# I avoid copy paste as usual and just go wrting entire code to get the feelings
+# of writing and learning at the same time
 # as it's still take some time for me to grasp the concept
 # there like several method introduce that not really me familiar with ## 25/7/2024 until I grasp the concept, I will make my changes.
 
