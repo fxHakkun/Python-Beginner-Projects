@@ -18,9 +18,9 @@ def guess(x):
             lives = lives - 1
             print(f"Lives = {lives}")
     if lives == 0:
-        print(f"Lives has turned {lives} . Sorry you lost ")
+        print(f"Lives has turned {lives} . Sorry you lost, The correct number is {randomnumber} ")
     if randomnumber == guessnumber:
-        print(f"You are correct ! {guessnumber} is the correct answer.")  
+        print(f"You are correct ! {guessnumber} is the correct answer.")
 
 def computer_guess(x):
     low = 1
@@ -30,7 +30,7 @@ def computer_guess(x):
     print("Let me guess you next.")
     while feedback != 'y' and low != high and lives != 0 :
         guess = random.randint(low,high)
-        feedback = input(f"Lives begin with {lives} does {guess} is correct? (C) is too high? (H) or too low? (l)").lower()
+        feedback = input(f"Lives begin with {lives} does {guess} is correct? (Y) is too high? (H) or too low? (L)").lower()
         if feedback == 'h':
             high = guess - 1
             lives = lives -1
@@ -41,7 +41,7 @@ def computer_guess(x):
             print(f"Lives = {lives}")
     if low == high: #adding if on while cause I determined the computer guess wrong but deemed correct when high and low is the same thus it skip the process
         guess = low
-        feedback = input(f"{guess} is correct? (C)").lower()
+        feedback = input(f"{guess} is correct? (Y)").lower()
     if lives == 0:
         print(f"Lives has turned {lives}")
         guess = int(input("What is the correct number? "))
